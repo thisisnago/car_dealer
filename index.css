@@ -1,0 +1,232 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Lato;
+}
+
+.container{
+    margin: auto;
+    max-width: 767px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* HEADER */
+#header{
+    margin: auto;
+    position: fixed;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    top: 0;
+    padding: 0 35px;
+    width: 100%;
+}
+
+#header h1{
+    color: black;
+    text-align: center;
+}
+
+.header__main-info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo{
+    margin: auto;
+    width: 100px;
+}
+
+.all-nav-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    margin: 20px;
+    font-size: 16px;
+}
+
+.nav-link{
+    padding: 0 15px;
+}
+
+main{
+    margin-top: 205px;
+}
+
+#contact_us{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    text-align: center;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#email{
+    width: 100%;
+    max-width: 275px;
+    margin: 20px;
+    height: 30px;
+}
+
+#submit{
+    background-color: black;
+    color: white;
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+}
+
+#submit:hover{
+    background-color: white;
+    border-color: black;
+    color: black;
+}
+
+
+.delivery-icon{
+    width: 150px;
+}
+
+.warranty-icon{
+    width: 50px;
+}
+
+#features{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.features-info{
+    margin: 30px 0;
+
+    max-width: 400px;
+}
+
+#features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#how-it-works{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.product{
+    margin: auto;
+    margin-top: 20px;
+    max-width: 300px;
+    border-radius: 3px;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 10px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    border: 1px solid black;
+    border-top: none;
+}
+
+
+.product *{
+    margin-bottom: 20px;
+}
+
+.car-image{
+    max-width: 300px;
+    width: 100%;
+}
+
+.btn{
+    background-color: black;
+    color: white;
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+}
+
+.btn:hover{
+    background-color: white;
+    border-color: black;
+    color: black;
+}
+
+footer{
+    padding: 10px;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+@media(min-width: 768px){
+    .container{
+        max-width: 1150px;
+        margin: auto;
+    }
+
+    #header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        top: 0;
+    }
+
+    main{
+        margin-top: 105px;
+    }
+
+    .header__main-info{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav-link{
+        margin-right: 25px;
+        font-size: 18px;
+    }
+
+    #features{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #pricing{
+        display: flex;
+        flex-direction: row;
+    }
+}
